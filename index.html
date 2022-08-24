@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <nav>
+       <div class="menudiv">
+        <button id="menButton" name="menuButton" class="button" onclick="menuButtonClick()" >
+        
+        </button>
+ 
+        <div class="links" id="links">
+            
+            <input type="button"  id="dark-mode-radio" onclick="darkModeClick()">
+            <a href="#about">About</a>
+                <a href="#services">Services</a>
+            <a href="#contacting">contacting</a>
+           
+        </div>
+      
+       </div>
+    
+
+    <div class="logo" ><img id="logo" src="images/Logopit_1660894168163.png"></div>
+
+
+
+    </nav>
+    <div class="cardcontainer"  id="about">
+    <div class="cardheader">
+    
+        <div class="cardtitle">About</div>
+    </div>
+            <div class="slidecontent">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid deleniti eligendi quae ea nam ipsam alias exercitationem quasi similique.</p> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid deleniti eligendi quae ea nam ipsam alias exercitationem quasi similique.</p>  
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid deleniti eligendi quae ea nam ipsam alias exercitationem quasi similique.</p>   
+            </div>
+    </div>
+
+    <div class="cardcontainer2"  id="services">
+        <div class="cardheader">
+        
+            <div class="cardtitle">Services</div>
+        </div>
+                <div class="slidecontent">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid deleniti eligendi quae ea nam ipsam alias exercitationem quasi similique.</p> 
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid deleniti eligendi quae ea nam ipsam alias exercitationem quasi similique.</p>  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid deleniti eligendi quae ea nam ipsam alias exercitationem quasi similique.</p>   
+                </div>
+        </div>
+
+        <div class="cardcontainer3" id="contacting">
+            <div class="cardheader">
+            
+                <div class="cardtitle">contacting</div>
+            </div>
+                    <div class="slidecontent">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid deleniti eligendi quae ea nam ipsam alias exercitationem quasi similique.</p> 
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid deleniti eligendi quae ea nam ipsam alias exercitationem quasi similique.</p>  
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid deleniti eligendi quae ea nam ipsam alias exercitationem quasi similique.</p>   
+                  </div>
+            </div>
+            <div class="contacting-icons">
+                  <img src="images/instagram.png">
+                  <img src="images/facebook.png">
+                  
+            </div>
+</body>
+
+    <script>
+        let linksDiv=document.getElementById("links")
+         let menuButton=document.getElementById("menButton")
+         let isClicked=false
+         linksDiv.style.width="0%"
+        linksDiv.style.transitionDuration="1s"
+        let isInDarkMode=false;
+        let darkModeButton=document.getElementById("dark-mode-radio")
+        let body=document.querySelector("body")
+        let logo=document.getElementById("logo")
+      
+        function darkModeClick()
+        {
+            if(isInDarkMode==false)
+            {
+                darkModeButton.style.backgroundColor="#555"
+            darkModeButton.style.borderColor="#999"
+            body.style.background=" linear-gradient(to top right,#000,#222)"
+            logo.style.opacity="0.9"
+            return isInDarkMode=true
+            
+            }
+           else
+           {
+            darkModeButton.style.backgroundColor="#999"
+            darkModeButton.style.borderColor="#555"
+            body.style.background=" linear-gradient(to top right,#000,#666)"
+            logo.style.opacity="0.5"
+           
+            return isInDarkMode=false
+           
+           }
+        }
+      function menuButtonClick()
+      {
+        if(isClicked==false)
+        {
+            linksDiv.style.width="100%"
+            linksDiv.style.zIndex="3"
+        return isClicked=true
+        }
+        if(isClicked==true)
+        {
+            linksDiv.style.width="0%"
+            linksDiv.style.zIndex="-3"
+        return isClicked=false
+        }
+   
+      }
+    
+    </script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</body>
+</html>

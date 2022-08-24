@@ -1,0 +1,213 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+
+}
+a
+{
+    text-shadow: 0.3vw 0.2vw 0.2vw #000;
+}
+p
+{
+    text-shadow: 0.3vw 0.2vw 0.2vw #000;
+}
+body
+{
+    height: 350vh;
+    width: 100vw;
+    overflow-x: hidden;
+   background-repeat: no-repeat;
+   background: linear-gradient(to top right,#000,#666);
+} 
+nav
+{
+    height: 15%;
+    width: 100%;
+    background-color: gray;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: hard-light;
+    margin-top: 3vw;
+}
+.logo
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+}
+.logo img
+{
+    margin-left: 5vh;margin-top: 2vh ;
+    background-color: white;
+    border-radius: 50%;
+    width: 12vw;
+  opacity: 0.5;
+  box-shadow: 0.4vw 0.4vw 1vw 0.3vw #000;
+}
+.logo img:hover
+{
+    transform: scale(1.1,1.1);
+}
+
+.links
+{
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 5;
+    height: 100%;
+    top: 1vw;
+}
+.links a
+{
+    margin: 5vw;
+    margin-top: 6vw;
+    font-size: 2vw;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.links a:hover
+{
+    opacity: 0.4;
+    transition-duration: 0.5s;
+}
+.cardcontainer
+{
+    height: 75vh;
+    width: 75vw;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 25vh;
+    background-color: #888;
+    mix-blend-mode:hard-light;
+    border-radius: 15vh;
+    box-shadow: #000 -1vw 1vw 3vw 0.1vw;
+}
+.cardheader
+{
+    height: 40%;width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardimg img
+{
+    margin-top: 30%;
+    width: 25%;
+    border-radius: 20%;
+}
+.cardtitle
+{
+font-size: 4vw;
+font-weight: 900;
+color: white;
+text-transform: uppercase;
+text-shadow: 0.3vw 0.2vw 0.2vw #000;
+}
+.slidecontent
+{
+line-height: 2vw;
+margin-top: -5vw;
+margin-left: 5vw;
+margin-right: 5vw;
+
+}
+.slidecontent p
+{
+    margin-top: 3vw;
+font-size: 2vw;
+color: white;
+opacity: 0.5;
+}
+.cardcontainer2
+{
+    height: 75vh;
+    width: 75vw;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 115vh;
+    border-radius: 15vh;
+    background-color: #888;
+    mix-blend-mode:hard-light;
+    box-shadow: #000 -1vw 1vw 3vw 0.1vw;
+}
+.cardcontainer3
+{
+    box-shadow: #000 -1vw 1vw 3vw 0.1vw;
+    height: 75vh;
+    width: 75vw;
+    position: absolute;
+    margin-left: 12%;
+    margin-top: 205vh;
+    border-radius: 15vh;
+    background-color: #888;
+    mix-blend-mode:hard-light;
+}
+a:hover
+{
+    background-color: white;
+    text-decoration: none;
+    color: #888;
+}
+.button
+{
+    width: 2vw;
+    height: 6vw;
+    position: absolute;
+    top: 1vw;right: 1vw;
+z-index: 12;
+display: flex;
+border: none;
+}
+.menudiv
+{
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#dark-mode-radio
+{
+    width: 3vw;height: 3vw;
+    margin-top: 1.5vw;
+ border-radius: 50%;
+ border-width: 0.4vw;
+ border-style: solid;
+ border-color: #555;;
+ background-color: white;
+ mix-blend-mode: normal;
+}
+#dark-mode-radio:hover
+{
+transform: scale(1.1,1.1);
+}
+.contacting-icons
+{
+    box-shadow: #000 -1vw 1vw 3vw 0.1vw;
+    height: 35vh;
+    width: 35vw;
+    position: absolute;
+    margin-left: 32%;
+    margin-top: 295vh;
+    border-radius: 15vh;
+    background-color: #888;
+    mix-blend-mode:hard-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     justify-content: space-evenly;
+}
+.contacting-icons img
+{
+    width: 10vh;
+   opacity: 0.5;
+}
